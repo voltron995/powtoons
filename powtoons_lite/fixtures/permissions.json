@@ -1,0 +1,20 @@
+[
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "get_all_powtoons",
+        "content_type": 2,
+        "codename": "get_all_powtoons"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "can_share_powtoons",
+        "content_type": 2,
+        "codename": "can_share_powtoons"
+    }
+}
+]
