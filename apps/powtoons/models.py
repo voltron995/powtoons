@@ -21,6 +21,7 @@ class Powtoon(models.Model):
     shared_with = models.ManyToManyField(
         verbose_name="shared_with",
         to=User, related_name='powtoon_shared_with',
+        null=True, blank=True
     )
 
     content = JSONField(

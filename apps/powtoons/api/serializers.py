@@ -31,3 +31,4 @@ class PowtoonCreateUpdateSerializer(serializers.ModelSerializer):
         fields = [
             'id', 'name', 'owner', 'shared_with'
         ]
+        optional_fields = ['shared_with', ]

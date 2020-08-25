@@ -112,7 +112,6 @@ class PowtoonAPITest(TestCase):
             data={
                     'name': 'New powtoon',
                     'owner': self.default_user.id,
-                    'shared_with': [],
                 },
             format='json',
             )
@@ -140,7 +139,7 @@ class PowtoonAPITest(TestCase):
 
     def test_powtoon_edit(self):
         self.c.login(username=self.default_user.username, password='111')
-        response = self.c.put('/powtoon/{id}/'.format(id=self.powtoon1.id),
+        response = self.c.patch('/powtoon/{id}/'.format(id=self.powtoon1.id),
             data={
                     'name': 'Renamed powtoon',
                 },
